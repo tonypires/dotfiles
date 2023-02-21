@@ -231,6 +231,11 @@ _G.packer_plugins = {
     path = "/home/tonypires/.local/share/nvim/site/pack/packer/start/vim-commentary",
     url = "https://github.com/tpope/vim-commentary"
   },
+  ["vim-illuminate"] = {
+    loaded = true,
+    path = "/home/tonypires/.local/share/nvim/site/pack/packer/start/vim-illuminate",
+    url = "https://github.com/RRethy/vim-illuminate"
+  },
   ["vim-maximizer"] = {
     loaded = true,
     path = "/home/tonypires/.local/share/nvim/site/pack/packer/start/vim-maximizer",

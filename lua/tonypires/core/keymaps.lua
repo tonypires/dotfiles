@@ -28,7 +28,9 @@ keymap.set("n", "<leader>]", "10<C-w><")
 keymap.set("n", "<leader>[", "10<C-w>>")
 
 -- Reload configuration without restart nvim
-keymap.set("n", "<leader>r", ":so %<CR>")
+keymap.set("n", "<leader>ra", ":so %<CR>")
+-- Reload current file
+keymap.set("n", "<leader>r", ":e!<CR>")
 
 -- Center cursorline when scrolling
 keymap.set("n", "<C-u>", "<C-u>zz")

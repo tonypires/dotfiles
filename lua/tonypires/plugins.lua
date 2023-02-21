@@ -29,9 +29,10 @@ return packer.startup(function(use)
 	-- Packer can manage itself
 	use("wbthomason/packer.nvim")
 
-	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
+	-- lua functions that many plugins use
+	use("nvim-lua/plenary.nvim")
 
-	-- Colorscheme
+	-- colorscheme
 	-- use("bluz71/vim-nightfly-guicolors")
 	-- use("EdenEast/nightfox.nvim")
 	use("folke/tokyonight.nvim")
@@ -51,7 +52,7 @@ return packer.startup(function(use)
 	-- replace with register contents using motion (gr + motion)
 	use("vim-scripts/ReplaceWithRegister")
 
-	-- Comment code out using gc / gcc
+	-- comment code out using gc / gcc
 	use("tpope/vim-commentary")
 
 	-- file explorer
@@ -112,8 +113,11 @@ return packer.startup(function(use)
 	-- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
-	-- Let's try smooth scrolling
+	-- smooth scrolling
 	use("karb94/neoscroll.nvim")
+
+	-- automatic highlighting of other uses of the word under the cursor (https://github.com/RRethy/vim-illuminate)
+	use("RRethy/vim-illuminate")
 
 	if packer_bootstrap then
 		require("packer").sync()

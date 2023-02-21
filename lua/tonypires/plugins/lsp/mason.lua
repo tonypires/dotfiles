@@ -30,7 +30,7 @@ mason_lspconfig.setup({
 	-- Full list of available language servers:  https://github.com/williamboman/mason-lspconfig.nvim
 	ensure_installed = {
 		"tsserver",
-		"sumneko_lua",
+		"lua_ls",
 		"html",
 		"cssls",
 	},

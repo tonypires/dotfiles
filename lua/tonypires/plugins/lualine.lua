@@ -5,7 +5,6 @@ end
 
 -- get lualine theme
 local lualine_theme = require("lualine.themes.tokyonight")
--- local lualine_theme = "vscode"
 
 -- new colors for theme
 local new_colors = {
