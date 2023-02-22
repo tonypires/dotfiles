@@ -24,8 +24,8 @@ keymap.set("n", "<leader>h", "<C-w>s")
 keymap.set("n", "<leader>w", "<C-w>c")
 
 -- Resize splits
-keymap.set("n", "<leader>]", "10<C-w><")
-keymap.set("n", "<leader>[", "10<C-w>>")
+keymap.set("n", "<C-]>", "10<C-w><")
+keymap.set("n", "<C-[>", "10<C-w>>")
 
 -- Reload configuration without restart nvim
 keymap.set("n", "<leader>ra", ":so %<CR>")

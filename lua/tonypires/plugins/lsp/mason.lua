@@ -33,6 +33,7 @@ mason_lspconfig.setup({
 		"lua_ls",
 		"html",
 		"cssls",
+		"python",
 	},
 })
 
