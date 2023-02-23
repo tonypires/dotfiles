@@ -70,6 +70,9 @@ theme.setup({
 		highlights.NvimTreeSpecialFile = { fg = "#fca7ea", underline = true }
 		highlights.NvimTreeSymlink = { fg = "#82aaff" }
 		highlights.NvimTreeWinSeparator = { bg = "#1e2030", fg = "#1e2030" }
+		-- Custom highlights for Telescope
+		highlights.TelescopeNormal = { bg = "#1c1c1c", fg = "#589ed7" }
+		highlights.TelescopeBorder = { bg = "#1c1c1c", fg = "#589ed7" }
 	end,
 })
 
