@@ -73,6 +73,29 @@ theme.setup({
 		-- Custom highlights for Telescope
 		highlights.TelescopeNormal = { bg = "#1c1c1c", fg = "#589ed7" }
 		highlights.TelescopeBorder = { bg = "#1c1c1c", fg = "#589ed7" }
+		-- Bufferline (barbar.lua) highlights
+		highlights.BufferCurrent = { bg = "#000000" }
+		highlights.BufferCurrent = { bg = "#000000" }
+		highlights.BufferCurrentERROR = { bg = "#000000" }
+		highlights.BufferCurrentHINT = { bg = "#000000" }
+		highlights.BufferCurrentIcon = { bg = "#000000" }
+		highlights.BufferCurrentIndex = { bg = "#000000" }
+		highlights.BufferCurrentINFO = { bg = "#000000" }
+		highlights.BufferCurrentMod = { bg = "#000000" }
+		highlights.BufferCurrentSign = { bg = "#000000" }
+		highlights.BufferCurrentTarget = { bg = "#000000" }
+		highlights.BufferCurrentWARNk = { bg = "#000000" }
+
+		highlights.BufferInactive = { bg = "#35624b" }
+		highlights.BufferInactiveERROR = { bg = "#35624b" }
+		highlights.BufferInactiveHINT = { bg = "#35624b" }
+		highlights.BufferInactiveIcon = { bg = "#35624b" }
+		highlights.BufferInactiveIndex = { bg = "#35624b" }
+		highlights.BufferInactiveINFO = { bg = "#35624b" }
+		highlights.BufferInactiveMod = { bg = "#35624b" }
+		highlights.BufferInactiveSign = { bg = "#35624b" }
+		highlights.BufferInactiveTarget = { bg = "#35624b" }
+		highlights.BufferInactiveWARN = { bg = "#35624b" }
 	end,
 })
 

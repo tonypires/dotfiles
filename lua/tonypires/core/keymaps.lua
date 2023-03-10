@@ -2,6 +2,10 @@ vim.g.mapleader = ","
 
 local keymap = vim.keymap
 
+--
+-- General keymaps
+--
+
 -- Disable arrow keys
 keymap.set("", "<up>", "<nop>")
 keymap.set("", "<down>", "<nop>")
@@ -10,9 +14,6 @@ keymap.set("", "<right>", "<nop>")
 
 -- Clear search highlighting with <leader> and c
 keymap.set("n", "<leader>c", ":nohl<CR>")
-
--- In normal mode, when deleting a single character this will prevent it being copied into the buffer
--- keymap.set("n", "x", "_x")
 
 -- Change split orientation
 keymap.set("n", "<leader>tk", "<C-w>t<C-w>K") -- change vertical to horizontal
@@ -24,8 +25,10 @@ keymap.set("n", "<leader>h", "<C-w>s")
 keymap.set("n", "<leader>w", "<C-w>c")
 
 -- Resize splits
-keymap.set("n", "<C-]>", "10<C-w><")
-keymap.set("n", "<C-[>", "10<C-w>>")
+-- keymap.set("n", "<C-]>", "10<C-w><") -- Vertical splits
+-- keymap.set("n", "<C-[>", "10<C-w>>") -- Vertical splits
+-- keymap.set("n", "<C-m>", ":10winc-<CR>")
+-- keymap.set("n", "<C-n>", ":10winc+<CR>")
 
 -- Reload configuration without restart nvim
 keymap.set("n", "<leader>ra", ":so %<CR>")
@@ -47,7 +50,9 @@ keymap.set("i", "<C-H>", "<C-W>", { noremap = true })
 -- Close all windows and exit from Neovim with <leader> and q
 keymap.set("n", "<leader>q", ":qa!<CR>")
 
+--
 -- Plugin keymaps
+--
 
 -- vim-maximizer
 keymap.set("n", "<leader>mm", ":MaximizerToggle<CR>")
