@@ -13,11 +13,11 @@ saga.setup({
 		winblend = 0,
 		expand = "",
 		collapse = "",
-		preview = " ",
+		preview = "→ ",
 		code_action = "💡",
 		diagnostic = "🐞",
-		incoming = " ",
-		outgoing = " ",
+		incoming = "↓ ",
+		outgoing = "↗ ",
 		colors = {
 			--float window normal background color
 			normal_bg = "#1d1536",

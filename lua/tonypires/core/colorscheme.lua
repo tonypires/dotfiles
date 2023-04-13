@@ -39,7 +39,7 @@ theme.setup({
 		colors.fg_gutter = "#858585"
 		colors.bg = "#1e1e1e"
 		colors.border = colors.orange -- set the split border color
-		colors.comment = "#595959"
+		colors.comment = "#757575"
 	end,
 
 	--- You can override specific highlights to use other groups or a hex color

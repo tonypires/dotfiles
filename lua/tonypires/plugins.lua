@@ -96,8 +96,8 @@ return packer.startup(function(use)
 	-- Extra treesitter support for commenting out code based on cursor location.
 	-- Useful for adding language specific commentary (e.g. jsx fragements, jsx elements, etc)
 	use("JoosepAlviste/nvim-ts-context-commentstring")
-	-- git integration
-	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
+	-- -- git integration
+	-- use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 	-- smooth scrolling
 	use("karb94/neoscroll.nvim")
 	-- automatic highlighting of other uses of the word under the cursor (https://github.com/RRethy/vim-illuminate)
