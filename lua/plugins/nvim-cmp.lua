@@ -29,7 +29,7 @@ return {
         ["<Tab>"] = cmp.mapping(function(fallback)
           if cmp.visible() then
             -- Tab to select the first item in the list
-            cmp.confirm({ select = true })
+            cmp.confirm({ select = false })
             -- You could replace the expand_or_jumpable() calls with expand_or_locally_jumpable()
             -- this way you will only jump inside the snippet region
           elseif luasnip.expand_or_jumpable() then

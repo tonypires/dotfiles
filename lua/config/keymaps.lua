@@ -33,6 +33,11 @@ keymap.set("i", "<C-H>", "<C-W>", { noremap = true })
 keymap.set({ "n", "v" }, "<C-c>", '"+y')
 keymap.set({ "n", "v" }, "<C-v>", '"+p')
 
+-- Clear search highlights
+-- NOTE: LazyVim also has this keybinding but it also includes redrawing the screen which cause an annoying flash
+-- in the terminal
+keymap.set("n", "<leader>ur", "<Cmd>nohlsearch<CR>")
+
 -- Correct accidental capitalization of these commands
 cmd(":command! Wq wq")
 cmd(":command! Wa wa")
