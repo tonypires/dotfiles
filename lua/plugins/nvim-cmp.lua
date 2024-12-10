@@ -12,6 +12,9 @@ return {
     "hrsh7th/nvim-cmp",
     dependencies = {
       "hrsh7th/cmp-emoji",
+      "hrsh7th/cmp-nvim-lsp",
+      "hrsh7th/cmp-buffer",
+      "hrsh7th/cmp-path",
     },
     ---@param opts cmp.ConfigSchema
     opts = function(_, opts)
@@ -24,12 +27,16 @@ return {
       local luasnip = require("luasnip")
       local cmp = require("cmp")
 
+      opts.completion = {
+        completeopt = "menu,menuone,noselect",
+      }
+
       opts.mapping = vim.tbl_extend("force", opts.mapping, {
         -- ["<Tab>"] = cmp.mapping.confirm({ select = true }),
         ["<Tab>"] = cmp.mapping(function(fallback)
           if cmp.visible() then
             -- Tab to select the first item in the list
-            cmp.confirm({ select = false })
+            cmp.confirm({ select = true })
             -- You could replace the expand_or_jumpable() calls with expand_or_locally_jumpable()
             -- this way you will only jump inside the snippet region
           elseif luasnip.expand_or_jumpable() then
@@ -65,7 +72,37 @@ return {
             fallback()
           end
         end, { "i", "s" }),
+        ["<CR>"] = cmp.mapping({
+          i = function(fallback)
+            if cmp.visible() and cmp.get_active_entry() then
+              cmp.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = false })
+            else
+              fallback()
+            end
+          end,
+          s = cmp.mapping.confirm({ select = true }),
+          c = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true }),
+        }),
       })
+
+      opts.experimental = {
+        ghost_text = false,
+      }
+
+      -- opts.formatting = {
+      --   format = function(entry, vim_item)
+      --     -- vim_item.kind = require("lspkind").presets.default[vim_item.kind]
+      --     vim_item.menu = ({
+      --       buffer = "[Buffer]",
+      --       nvim_lsp = "[LSP]",
+      --       vsnip = "[VSnip]",
+      --       luasnip = "[LuaSnip]",
+      --       nvim_lua = "[Lua]",
+      --       latex_symbols = "[LaTeX]",
+      --     })[entry.source.name]
+      --     return vim_item
+      --   end,
+      -- }
     end,
   },
 }

@@ -132,6 +132,13 @@ return {
             ["?"] = "show_help",
             ["<"] = "prev_source",
             [">"] = "next_source",
+            -- my custom mappings
+            ["g"] = function(state)
+              local node = state.tree:get_node()
+              if node.type == "directory" then
+                require("neo-tree.sources.filesystem").navigate(state, node:get_id(), state.path, node.path)
+              end
+            end,
           },
         },
         -- nesting_rules = {},

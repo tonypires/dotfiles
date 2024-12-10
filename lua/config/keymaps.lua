@@ -38,6 +38,11 @@ keymap.set({ "n", "v" }, "<C-v>", '"+p')
 -- in the terminal
 keymap.set("n", "<leader>ur", "<Cmd>nohlsearch<CR>")
 
+-- Maximize vertical split
+keymap.set("n", "<leader>m", "<C-W>|")
+-- Restore maximized vertical split
+keymap.set("n", "<leader>mc", "<C-W>=")
+
 -- Correct accidental capitalization of these commands
 cmd(":command! Wq wq")
 cmd(":command! Wa wa")
