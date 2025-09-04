@@ -1,6 +1,4 @@
-# 💤 LazyVim Neovim Configuration
-
-This is my personal Neovim configuration, built on top of [LazyVim](https://github.com/LazyVim/LazyVim), a modular and fast Neovim setup powered by lazy-loading.
+This is my personal Neovim configuration for front-end development, built on top of [LazyVim](https://github.com/LazyVim/LazyVim), a modular and fast Neovim setup powered by lazy-loading.
 
 ## Features
 
