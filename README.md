@@ -1,4 +1,4 @@
-````markdown path=/Users/tonypires/.config/nvim/README.md start_line=1 end_line=18
+````markdown
 # 💤 LazyVim Neovim Configuration
 
 This is my personal Neovim configuration, built on top of [LazyVim](https://github.com/LazyVim/LazyVim), a modular and fast Neovim setup powered by lazy-loading.
