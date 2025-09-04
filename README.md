@@ -1,4 +1,3 @@
-````markdown
 # 💤 LazyVim Neovim Configuration
 
 This is my personal Neovim configuration, built on top of [LazyVim](https://github.com/LazyVim/LazyVim), a modular and fast Neovim setup powered by lazy-loading.
@@ -21,7 +20,6 @@ Clone this repo into your Neovim config directory:
 ```sh
 git clone <this-repo-url> ~/.config/nvim
 ```
-````
 
 ## Customization
 

@@ -12,3 +12,4 @@ vim.opt.guicursor = "n-v-i-c:block-Cursor"
 -- vim.api.nvim_set_hl(0, "CmpGhostText", { fg = "#000000", italic = true })
 -- vim.api.nvim_set_hl(0, "CopilotSuggestion", { fg = "#FFFFFF", italic = true, nocombine = true })
 --
+vim.opt.conceallevel = 0
