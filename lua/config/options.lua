@@ -17,3 +17,4 @@ vim.opt.conceallevel = 0
 vim.g.ai_cmp = false
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+vim.opt.swapfile = false
