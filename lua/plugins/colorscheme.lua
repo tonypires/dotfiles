@@ -18,10 +18,10 @@ return {
       day_brightness = 0.3, -- Adjusts the brightness of the colors of the **Day** style. Number between 0 and 1, from dull to vibrant colors
       dim_inactive = true, -- dims inactive windows
       lualine_bold = false, -- When `true`, section headers in the lualine theme will be bold
-      -- on_colors = function(colors)
-      --   colors.bg = "#000000" -- Example hex color
-      --   colors.bg_dark = "#000000" -- Optional: adjust darker background
-      -- end,
+      on_colors = function(colors)
+        -- colors.bg = "#000000" -- Example hex color
+        -- colors.bg_dark = "#000000" -- Optional: adjust darker background
+      end,
       on_highlights = function(highlights, colors)
         highlights.CursorLine = { bg = "#141414" } -- Replace with your desired hex color
       end,
